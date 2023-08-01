@@ -6,9 +6,9 @@ Time: Please limit yourself to 2 hours
 
 You can choose between Go or TypeScript (Node.js) for your implementation. Either implementation will require knowledge of SQL as well.
 
-Go scaffolding is located in the `go/` directory.
+Scaffolding for Go is located in [this branch](https://github.com/orum-io/code-interview/tree/go)
 
-Typescript scaffolding is located in the `typescript/` directory.
+Scaffolding for TypeScript is located in [this branch](https://github.com/orum-io/code-interview/tree/typescript)
 
 ## Summary
 
