@@ -2,7 +2,13 @@
 
 Time: Please limit yourself to 2 hours
 
-Languages: Go, SQL
+## Languages
+
+You can choose between Go or TypeScript (Node.js) for your implementation. Either implementation will require knowledge of SQL as well.
+
+Go scaffolding is located in the `go/` directory.
+
+Typescript scaffolding is located in the `typescript/` directory.
 
 ## Summary
 
@@ -12,6 +18,8 @@ We're evaluating your ability to take a set of requirements and build a solution
 
 The goal of this exercise is to design and implement a read-only API that returns one or more records from a static set of transfer data fulfilling the requirements listed below.  You are free to make assumptions as to what would be most useful for the developer integrating with your API. You should document any assumptions made and the reasoning behind them in a readme.md file.  If you think of something that would be really useful for the developer but do not have time to build the feature, document it in the roadmap.md file.
 Your solution should have some way to run locally and test the results so we can fully analyze your efforts.
+
+We have provided a sqlite database containing the data you will need to query: `transfers.db`.
 
 ### Endpoints
 
