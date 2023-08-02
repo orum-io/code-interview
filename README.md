@@ -134,3 +134,7 @@ When you're ready to submit your code, we ask that you create a **private** gith
 [@TheManSpeaker](https://github.com/TheManSpeaker)
 
 [@bengentree](https://github.com/bengentree)
+
+## Questions
+
+Please email code-interview@orum.io if you have any questions regarding the assignment.
