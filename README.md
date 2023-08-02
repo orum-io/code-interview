@@ -61,16 +61,15 @@ CREATE TABLE transfers (
 
 ### Endpoints
 
+#### Transfers
+
 We would like 2 endpoints implemented for this feature:
 
 GET /transfers (with pagination)
 
 GET /transfers/{id}
 
-### Fields
-
-We would like the following fields returned for a transfer:
-
+The response should contain the following attributes:
 ```text
 - id
 - timestamp
@@ -83,6 +82,37 @@ We would like the following fields returned for a transfer:
 ```
 
 Bonus: Feel free to add anything to the API that would make it easier for a developer to consume.
+
+#### Accounts
+
+We would like 1 endpoint implement for this feature:
+
+POST /accounts
+
+The request should contain the following attributes:
+```text
+- customer id
+- account holder name
+- account number
+- routing number
+```
+
+The request should only save to the database if both the routing number is valid and the customer already exists in the database, otherwise it should return an error to the user.
+
+To determine whether a routing number is valid, it must conform to the following formula, where d<sub>n</sub> refers to the value of the digit in the n<sup>th</sup> place of the routing number.
+
+(3(d<sub>1</sub> + d<sub>4</sub> + d<sub>7</sub>) + 7(d<sub>2</sub> + d<sub>5</sub> + d<sub>8</sub>) + (d<sub>3</sub> + d<sub>6</sub> + d<sub>9</sub>)) mod 10 = 0
+
+For more information, please refer to the following link: [ABA Routing Transit Number](https://en.wikipedia.org/wiki/ABA_routing_transit_number#Check_digit)
+
+The response should contain the following attributes:
+```text
+- id
+- customer id
+- account holder name
+- account number
+- routing number
+```
 
 ## Results
 
