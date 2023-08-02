@@ -48,11 +48,11 @@ CREATE TABLE accounts (
 
 CREATE TABLE transfers (
     id TEXT NOT NULL PRIMARY KEY,
-    source_account_id TEXT NOT NULL,
-    dest_account_id TEXT NOT NULL,
     timestamp DATETIME NOT NULL,
     amount INTEGER NOT NULL,
     status TEXT NOT NULL,
+    source_account_id TEXT,
+    dest_account_id TEXT,
 
     FOREIGN KEY (source_account_id) REFERENCES accounts(id),
     FOREIGN KEY (dest_account_id) REFERENCES accounts(id)
