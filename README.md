@@ -54,3 +54,13 @@ A README.md with the following information
 3. Anything else you'd like us to know about your submission
 4. Can you think of any ways to optimize the queries?
 5. (BONUS) A ROADMAP.md with what you would add/change if you had more time. Dream big.
+
+## Submitting your code
+
+When you're ready to submit your code, we ask that you create a **private** github repo and add the following users as collaborators.
+
+[@jimstrate](https://github.com/jimstrate)
+
+[@TheManSpeaker](https://github.com/TheManSpeaker)
+
+[@bengentree](https://github.com/bengentree)
