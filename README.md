@@ -19,7 +19,43 @@ We're evaluating your ability to take a set of requirements and build a solution
 The goal of this exercise is to design and implement a read-only API that returns one or more records from a static set of transfer data fulfilling the requirements listed below.  You are free to make assumptions as to what would be most useful for the developer integrating with your API. You should document any assumptions made and the reasoning behind them in a readme.md file.  If you think of something that would be really useful for the developer but do not have time to build the feature, document it in the roadmap.md file.
 Your solution should have some way to run locally and test the results so we can fully analyze your efforts.
 
+### Database
+
 We have provided a sqlite database containing the data you will need to query: `transfers.db`.
+
+The database has the following schema:
+
+```sql
+CREATE TABLE customers (
+    id TEXT NOT NULL PRIMARY KEY,
+    first_name TEXT,
+    last_name TEXT,
+    date_of_birth DATE,
+    email TEXT
+);
+
+CREATE TABLE accounts (
+    id TEXT NOT NULL PRIMARY KEY,
+    customer_id TEXT NOT NULL,
+    routing_number TEXT,
+    account_number TEXT,
+    account_holder_name TEXT,
+
+    FOREIGN KEY (customer_id) REFERENCES customers(id)
+);
+
+CREATE TABLE transfers (
+    id TEXT NOT NULL PRIMARY KEY,
+    source_account_id TEXT NOT NULL,
+    dest_account_id TEXT NOT NULL,
+    timestamp DATETIME NOT NULL,
+    amount INTEGER NOT NULL,
+    status TEXT NOT NULL,
+
+    FOREIGN KEY (source_account_id) REFERENCES accounts(id),
+    FOREIGN KEY (dest_account_id) REFERENCES accounts(id)
+);
+```
 
 ### Endpoints
 
@@ -33,14 +69,16 @@ GET /transfers/{id}
 
 We would like the following fields returned for a transfer:
 
-    - id
-    - timestamp
-    - amount
-    - status
-    - source person name
-    - source account id
-    - destination person name
-    - destination account id
+```text
+- id
+- timestamp
+- amount
+- status
+- source customer name
+- source account id
+- destination customer name
+- destination account id
+```
 
 Bonus: Feel free to add anything to the API that would make it easier for a developer to consume.
 
