@@ -18,8 +18,8 @@ We're evaluating your ability to take a set of requirements and build a solution
 
 ## Implement an API for querying transfers data
 
-The goal of this exercise is to design and implement a read-only API that returns one or more records from a static set of transfer data fulfilling the requirements listed below.  You are free to make assumptions as to what would be most useful for the developer integrating with your API. You should document any assumptions made and the reasoning behind them in a readme.md file.  If you think of something that would be really useful for the developer but do not have time to build the feature, document it in the roadmap.md file.
-Your solution should have some way to run locally and test the results so we can fully analyze your efforts.
+The goal of this exercise is to design and implement an API that makes use of a provided sqlite database containing transfer, person, and account data to fulfill the requirements listed below.  You are free to make assumptions as to what would be most useful for the developer integrating with your API. You should document any assumptions made and the reasoning behind them in a readme.md file.  If you think of something that would be really useful for the developer but do not have time to build the feature, document it in the roadmap.md file.
+Your solution should have some way to run locally and test the results so we can fully analyze your efforts. We ❤️ tests at Orum so please include what you see fit. 
 
 ### Database
 
@@ -124,6 +124,20 @@ A README.md with the following information
 3. Anything else you'd like us to know about your submission
 4. Can you think of any ways to optimize the queries?
 5. (BONUS) A ROADMAP.md with what you would add/change if you had more time. Dream big.
+
+## FAQ
+
+### Can I use external libraries?
+
+Yes, please do. You can use any dependencies you like. Our only ask is that you explain your choices or are ready to do so in a followup interview.
+
+### Can I use an ORM?
+
+Sure can. We'll make sure to evaluate your SQL skills in a followup interview.
+
+### Should I write tests?
+
+Yes. We take pride in our tests at Orum so please include them.
 
 ## Submitting your code
 
