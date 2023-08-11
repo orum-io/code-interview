@@ -129,7 +129,7 @@ A README.md with the following information
 
 ### Can I use external libraries?
 
-Yes please do.  Feel free to make use of what dependencies you like.
+Yes, please do. You can use any dependencies you like. Our only ask is that you explain your choices or are ready to do so in a followup interview.
 
 ### Can I use an ORM?
 
