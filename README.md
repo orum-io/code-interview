@@ -41,7 +41,6 @@ CREATE TABLE accounts (
     customer_id TEXT NOT NULL,
     routing_number TEXT,
     account_number TEXT,
-    account_holder_name TEXT,
 
     FOREIGN KEY (customer_id) REFERENCES customers(id)
 );
