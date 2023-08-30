@@ -91,7 +91,6 @@ POST /accounts
 The request should contain the following attributes:
 ```text
 - customer id
-- account holder name
 - account number
 - routing number
 ```
@@ -108,7 +107,6 @@ The response should contain the following attributes:
 ```text
 - id
 - customer id
-- account holder name
 - account number
 - routing number
 ```
