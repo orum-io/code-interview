@@ -41,7 +41,6 @@ CREATE TABLE accounts (
     customer_id TEXT NOT NULL,
     routing_number TEXT,
     account_number TEXT,
-    account_holder_name TEXT,
 
     FOREIGN KEY (customer_id) REFERENCES customers(id)
 );
@@ -92,7 +91,6 @@ POST /accounts
 The request should contain the following attributes:
 ```text
 - customer id
-- account holder name
 - account number
 - routing number
 ```
@@ -109,7 +107,6 @@ The response should contain the following attributes:
 ```text
 - id
 - customer id
-- account holder name
 - account number
 - routing number
 ```
