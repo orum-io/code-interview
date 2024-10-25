@@ -142,7 +142,6 @@ When you're ready to submit your code, we ask that you create a **private** gith
 
 [@jimstrate](https://github.com/jimstrate)
 
-[@drazic1](https://github.com/drazic1)
 
 ## Questions
 
