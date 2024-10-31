@@ -141,7 +141,7 @@ Yes. We take pride in our tests at Orum so please include them.
 When you're ready to submit your code, we ask that you create a **private** github repo and add the following users as collaborators.
 
 [@jimstrate](https://github.com/jimstrate)
-[@TheManSpeaker] (https://github.com/TheManSpeaker)
+[@TheManSpeaker](https://github.com/TheManSpeaker)
 
 
 ## Questions
