@@ -1,6 +1,6 @@
 # Orum Coding Interview
 
-Time: Please limit yourself to 2 hours
+Time: This assignment should roughly take 2 hours. If you don't get to everything just add to the README.md file what you missed.
 
 ## Languages
 
