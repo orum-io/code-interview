@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/orum-io/code-interview#readme",
   "dependencies": {
-    "sqlite3": "^5.1.6"
+    "sqlite3": "^6.0.1"
   },
   "devDependencies": {
     "@types/sqlite3": "^3.1.8",
